@@ -16,8 +16,10 @@ public partial class PrintTable : System.Web.UI.Page
             string uname = Request["username"];
             string password = Request["password"];
             string sql = "select * from tbl_users where uname='" + uname + "' and upass='" + password + "';";
-            string str = MyAdoHelperAccess.printDataTable(db, sql);
-            Response.Redirect("index.aspx");
+            if (MyAdoHelperAccess.IsExist(db, sql))
+            {
+                Response.Redirect("index.aspx");
+            }
         }
     }
 }
