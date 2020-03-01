@@ -13,9 +13,11 @@ public partial class PrintTable : System.Web.UI.Page
         {
             string db = "Database.mdb";
             MyAdoHelperAccess.ConnectToDb(db);
-            string sql = "select * from tbl_users";
+            string uname = Request["username"];
+            string password = Request["password"];
+            string sql = "select * from tbl_users where uname='" + uname + "' and upass='" + password + "';";
             string str = MyAdoHelperAccess.printDataTable(db, sql);
-            Response.Redirect("https://lol.com");
+            Response.Redirect("index.aspx");
         }
     }
 }
