@@ -86,7 +86,8 @@
             transition: margin-left .5s;
         }
     </style>
-
+</head>
+<body>
     <script type="text/javascript">
 
         function Reset() {
@@ -122,8 +123,6 @@
             return msg;
         }
     </script>
-</head>
-<body>
     <form id="form1" runat="server">
         <div class="mobile-container">
 
@@ -168,7 +167,7 @@
                         <td>
                         </td>
                         <td>
-                            <input type="submit" value="התחבר" />
+                            <input type="submit" value="התחבר" onclick="return IsValid()" />
                             <input type="reset" value="אפס" onclick="Reset()" />
                         </td>
                     </tr>
