@@ -309,7 +309,7 @@
                         </td>
                         <td>
                             אני מסכים
-                            <a href="terms.html">לתנאי השימוש</a>
+                            <a href="Terms.aspx">לתנאי השימוש</a>
                             <input type="checkbox" id="checkbox" name="checkbox" onclick="MyWindow.close()"/>
                         </td>
                     </tr>
