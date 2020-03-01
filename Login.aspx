@@ -123,18 +123,28 @@
             return msg;
         }
     </script>
+    <script type="text/javascript">
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
     <form id="form1" runat="server">
         <div class="mobile-container">
 
         <!-- Top Navigation Menu -->
         <div class="topnav">
-            <a href="login.html" class="active">התחבר</a>
+            <a href="Login.aspx" class="active">התחבר</a>
             <div id="myLinks" style="text-align:right">
-                <a href="index.html" style="color: white">על עצמי</a>
-                <a href="subject.html" style="color: white">הנושא שבחרתי</a>
-                <a href="table.html" style="color: white">מידע על הנושא שבחרתי</a>
-                <a href="register.html" style="color: white">הרשמה</a>
-				<a href="album.html" style="color: white">אלבום תמונות</a>
+                <a href="index.aspx" style="color: white">על עצמי</a>
+                <a href="Subject.aspx" style="color: white">הנושא שבחרתי</a>
+                <a href="Table.aspx" style="color: white">מידע על הנושא שבחרתי</a>
+                <a href="Register.aspx" style="color: white">הרשמה</a>
+				<a href="Album.aspx" style="color: white">אלבום תמונות</a>
             </div>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                 <i class="fa fa-bars"></i>
