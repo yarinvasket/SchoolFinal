@@ -317,7 +317,7 @@
                         <td>
                         </td>
                         <td>
-                            <input type="submit" value="הרשם" />
+                            <input type="submit" value="הרשם" onclick="return IsValid()"/>
                             <input type="reset" value="אפס" onclick="Reset()" />
                         </td>
                     </tr>

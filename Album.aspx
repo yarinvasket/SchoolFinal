@@ -104,10 +104,12 @@
         function nextImg() {
             if (idx < 2)
                 document.getElementById('myImage').src = 'res/' + imgs[++idx];
+            return false;
         }
         function prevImg() {
             if (idx > 0)
                 document.getElementById("myImage").src = "res/" + imgs[--idx];
+            return false;
         }
 	</script>
     <form id="form1" runat="server">
@@ -130,17 +132,17 @@
 
         <div style="text-align:center">
             <h3 class="ex2">אלבום תמונות של היקום</h3>
-			<button onclick="nextImg()">
+			<button onclick="return nextImg()">
 				תמונה הבאה
 			</button>
 			----------
-			<button onclick="prevImg()">
+			<button onclick="return prevImg()">
 				תמונה קודמת
 			</button>
 			<br/>
 			<br/>
 			<br/>
-			<img id="myImage" src="res/img0.jpg" style="width:100px">
+			<img id="myImage" src="res/img0.jpg" style="width:100px"/>
         </div>
 
         <!-- End smartphone / tablet look -->
