@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Login.aspx.cs" Inherits="PrintTable" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Register.aspx.cs" Inherits="PrintTable" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -219,7 +219,7 @@
         </div>
 
         <div id="main">
-            <h1 style="text-align:center; display:block; font-size: 50px; text-decoration-line:underline">התחבר</h1>
+            <h1 style="text-align:center; display:block; font-size: 50px; text-decoration-line:underline">הרשם</h1>
             <form style="text-align:center" onsubmit="return IsValid()" action="login.html">
                 <table align="center">
                     <tr>
