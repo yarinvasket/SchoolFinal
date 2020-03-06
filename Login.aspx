@@ -185,7 +185,7 @@
 
                 <br/>
 
-                <a href="register.html" style="text-align:center">אין לי חשבון</a>
+                <a href="Register.aspx" style="text-align:center">אין לי חשבון</a>
                 <br/>
 
                 <div class="error" style="color:white" id="error"></div>
