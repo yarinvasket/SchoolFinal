@@ -16,9 +16,17 @@ public partial class PrintTable : System.Web.UI.Page
             string uname = Request["username"];
             string password = Request["password"];
             string sql = "select * from tbl_users where uname='" + uname + "' and upass='" + password + "';";
-            if (MyAdoHelperAccess.IsExist(db, sql))
+            if (uname == "admin" && MyAdoHelperAccess.IsExist(db, sql))
+            {
+                Response.Redirect("Admin.aspx");
+            }
+            else if (MyAdoHelperAccess.IsExist(db, sql))
             {
                 Response.Redirect("index.aspx");
+            }
+            else
+            {
+                Response.Write("Incorrect user name or password.");
             }
         }
     }

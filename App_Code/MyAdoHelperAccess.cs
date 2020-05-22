@@ -166,9 +166,7 @@ public class MyAdoHelperAccess
                     printStr += "<td>" + myItemArray.ToString() + "</td>";
                 }
 
-                printStr += "<td><form method='post' onsubmit='return confirm(\"delete " + row["id"] + " ?\")' action='managerDelete.aspx'>";
-                printStr += "<input type='hidden' id='hdnId' name='hdnId' value='" + row["id"] + "'/>";
-                printStr += "<input type='submit' value='delete' /></td></form>";
+                printStr += "<td><button onclick='changeValue(" + row["id"].ToString() + ")'>delete</></td>";
 
                 printStr += "</tr>";
             }
