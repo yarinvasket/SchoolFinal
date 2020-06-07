@@ -11,7 +11,7 @@ public partial class Admin : System.Web.UI.Page
     {
         string db = "Database.mdb";
         MyAdoHelperAccess.ConnectToDb(db);
-        Response.Write(MyAdoHelperAccess.printDataTableWithDelete(db, "select * from tbl_users"));
+        dataTable.InnerHtml = MyAdoHelperAccess.printDataTableWithDelete(db, "select * from tbl_users");
     }
 
     protected void DeleteUser(object sender, EventArgs e)

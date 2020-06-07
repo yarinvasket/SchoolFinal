@@ -22,6 +22,7 @@ public partial class PrintTable : System.Web.UI.Page
             }
             else if (MyAdoHelperAccess.IsExist(db, sql))
             {
+                Session["username"] = uname;
                 Response.Redirect("index.aspx");
             }
             else
