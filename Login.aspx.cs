@@ -18,11 +18,14 @@ public partial class PrintTable : System.Web.UI.Page
             string sql = "select * from tbl_users where uname='" + uname + "' and upass='" + password + "';";
             if (uname == "admin" && MyAdoHelperAccess.IsExist(db, sql))
             {
+                Session["username"] = uname;
+                Session["password"] = password;
                 Response.Redirect("Admin.aspx");
             }
             else if (MyAdoHelperAccess.IsExist(db, sql))
             {
                 Session["username"] = uname;
+                Session["password"] = password;
                 Response.Redirect("index.aspx");
             }
             else

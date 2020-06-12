@@ -25,7 +25,8 @@ public partial class PrintTable : System.Web.UI.Page
             if (!MyAdoHelperAccess.IsExist(db, sql))
             {
                 MyAdoHelperAccess.DoQuery(db, "insert into tbl_users (uname, Fname, Lname, upass, email, bday, gender, cellNum, phoneNum) values ('" + uname + "', '" + firstname + "', '" + lastname + "', '" + password + "', '" + email + "', '" + bday + "', '" + gender + "', '" + phoneNum.Substring(0, 3) + "', '" + phoneNum.Substring(3) + "');");
-
+                Session["username"] = uname;
+                Session["password"] = password;
                 Response.Redirect("Login.aspx");
             }
             else
