@@ -110,6 +110,7 @@
                 <a href="Table.aspx" style="color: white">מידע על הנושא שבחרתי</a>
                 <a href="Register.aspx" style="color: white">הרשמה</a>
 				<a href="Album.aspx" style="color: white">אלבום תמונות</a>
+                <a href="Disabled.aspx" style="color: white">נגישות</a>
             </div>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                 <i class="fa fa-bars"></i>
